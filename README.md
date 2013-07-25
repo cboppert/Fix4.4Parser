@@ -1,5 +1,5 @@
 FIX4.4 New Order Single Message Parser
-======================================
+--------------------------------------
 
 This program takes in a FIX4.4 message
 and tells you if there are errors or no errors.
