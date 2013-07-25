@@ -55,7 +55,6 @@ public class FixParser {
             String len = Integer.toString(fixMsg.length() - 1);
             if (fixMsg.substring(9, 9 + len.length()).equals(len.toString()) && (9 + len.length() < fixMsg.length())) {
                 // Check 35= comes next (MsgType)
-                System.out.println(fixMsg.substring(9 + len.length(), 11 + len.length()));
                 if (fixMsg.substring(9 + len.length(), 12 + len.length()).equals(initialHeaders[1])) {
                     // Check for check sum before other required headers
                     int index = fixMsg.length() - 1;
